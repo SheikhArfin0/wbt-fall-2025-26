@@ -4,36 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contact.css">
-
-    <title>Document</title>
+    <title>Contact Form</title>
 </head>
 <body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
     
-  
-   <h1>Contact Me</h1>
-   <form>
-    First Name : <input type="text" name="First Name" required>
-    Last Name :<input type="text" name="Last Name" required>
-    <br>
-    <input type="email" placeholder="Your Email" required>
-    <br>
-    <input type="text" placeholder="Company (optional)">
-    <br>
-     <p><strong>Reason for Contact:</strong></p>
-    <input type="radio" name="reason" value="project" required> Project
-    <input type="radio" name="reason" value="thesis"> Thesis
-    <input type="radio" name="reason" value="job"> Job
-    <br>
+    <h1>Contact Me</h1>
+    
+    <form>
+        <div id="div1">
+            <div class="form-row">
+                First Name: <input type="text" name="firstname" required>
+            </div>
+            <div class="form-row">
+                Last Name: <input type="text" name="lastname" required>
+            </div>
+            <div class="form-row">
+                Email: <input type="email" name="email" required>
+            </div>
+            <div class="form-row">
+                Company: <input type="text" name="company">
+            </div>
+        </div>
+        
+        <div id="div2">
+            <p><strong>Reason for Contact:</strong></p>
+            <input type="radio" id="project" name="reason" value="project" required>
+            <label for="project">Project</label>
+            
+            <input type="radio" id="thesis" name="reason" value="thesis">
+            <label for="thesis">Thesis</label>
+            
+            <input type="radio" id="job" name="reason" value="job">
+            <label for="job">Job</label>
+        </div>
 
-       <h4>My Services</h4>
-       <input type="checkbox" required>Machine Learning<br>
-        <input type="checkbox" required>Web Development<br>
-        <input type="checkbox" required>Mobile App Development<br>
+        <div id="div3">
+            <h4>My Services</h4>
+            <input type="checkbox" id="ml" name="services" value="ml">
+            <label for="ml">Machine Learning</label>
+            
+            <input type="checkbox" id="web" name="services" value="web">
+            <label for="web">Web Development</label>
+            
+            <input type="checkbox" id="mobile" name="services" value="mobile">
+            <label for="mobile">Mobile App Development</label>
+        </div>
 
-    <input type="date" placeholder="Book an Appointment">
-    <br>
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-   </form>
+        <div id="div4">
+            Book an Appointment: <input type="date" name="appointment">
+        </div>
+        
+        <div id="div5">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
 </body>
 </html>
